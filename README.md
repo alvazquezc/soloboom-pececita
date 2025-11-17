@@ -1,12 +1,17 @@
-# soloboom-pececita
+# soloboom-pececita v2
 
-Proxy API para obtener la información de Pececita_1k desde SoloBoom.
+Scraper corregido para leer correctamente las columnas del leaderboard de SoloBoom.
 
-### Cómo usarlo
+### Instrucciones:
 
-1. Sube este repositorio a GitHub.
-2. En Railway: New Project → Deploy from GitHub Repo.
-3. Railway instalará node automáticamente.
-4. Obtén tu dominio en Settings → Domains.
-5. Endpoint final:
+1. Sube este contenido a un repositorio GitHub (nombre sugerido: soloboom-pececita).
+2. En Railway → Create New Project → Deploy from GitHub Repo.
+3. Railway instalará Node y ejecutará el servidor automáticamente.
+4. Tu endpoint será:
    https://<tu-dominio>.up.railway.app/api/pececita
+
+### Cambios v2
+- Ajuste de columnas reales:
+  - posición: td[0]
+  - nombre: td[2]
+  - LP: td[10]
